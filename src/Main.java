@@ -1,16 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        Produkt p = new Produkt("Tennissocken", 2.4, 2.9, 12);
-        Produkt g = new Produkt("Sandspielzeug", 9.3, 18.5);
+        Volumen p = new Volumen(2, 5, 3);
+        Volumen g = new Volumen(4, 6);
 
+        p.rechneVolumen();
+        p.addeLaenge(10);
+        p.rechneVolumen();
 
-        p.lieferung(8);
-        p.verkaufe();
-        p.verkaufe(10);
-        p.schreibe();
-        g.schreibe();
-
-
+        g.rechneFlaeche();
+        g.addeBreite(10);
+        g.rechneFlaeche();
+        g.addeHoehe(3);
+        g.rechneVolumen();
     }
 }
